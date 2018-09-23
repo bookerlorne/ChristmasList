@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+*{
+  background: #00b6ff;
+  background: linear-gradient(to left right, #1d88e5, #87c7ff);
+  font-family: 'PT Sans', sans-serif;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+button {
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1{
+  font-family: 'Indie Flower', cursive;
+  color:#ffffff;
+  text-align: center;
+}
+
+footer{
+  color: white;
+  text-align: center;
+}
+
+ul{
+  text-align: center;
+    /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  
+  background: #00b6ff;
+  padding: 30px;
+}
+
+li{
+  font-family: 'Mukta', sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
